@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<resources>
+    <string name="app_name">UNE 2022</string>
+    <string name="app_registry">Registros</string>
+    <string name="app_contador">Contaddores</string>
+    <string name="app_settings">Ajustes</string>
+    <string name="about">Acerca de…</string>
+
+    <string name="last_read">Lectura anterior</string>
+    <string name="read">Lectura actual</string>
+    <string name="consumo">Consumo:</string>
+    <string name="total_a_pagar">A pagar:</string>
+
+    <string name="range">Rango (Cons.)</string>
+    <string name="consumokwh">Consumo (kWh)</string>
+    <string name="importe">Importe (Pesos)</string>
+    <string name="price">Precio (Pesos)</string>
+
+    <string name="readgt">La lectura actual debe ser mayor que la última lectura</string>
+    <string name="readall">Llene todos los campos</string>
+
+    <string name="_0_cup">0 CUP</string>
+    <string name="_0_kwh">0 kWh</string>
+    <string name="calcular">Calcular</string>
+
+    <string name="more_5000">Ud. puede consumir más de 5000 kWh</string>
+    <string name="minus_5000">Ud. puede consumir %1$d kWh</string>
+
+    <!-- MENU -->
+    <string name="mnu_registry">Registros</string>
+    <string name="mnu_contador">Contadores</string>
+    <string name="mnu_spend">¿Cuánto puedo gastar?</string>
+    <string name="mnu_dark_mode">Modo oscuro</string>
+    <string name="mnu_about">Acerca de…</string>
+    <string name="mnu_pay">Pagar factura de electricidad</string>
+    <string name="mnu_import">Importar datos</string>
+    <string name="mnu_export">Exportar datos</string>
+    <string name="mnu_update">Buscar actualizaciones</string>
+    <string name="mnu_settings">Ajustes</string>
+    <string name="mnu_auth_bpa">Autenticar BPA</string>
+    <string name="mnu_auth_bandec">Autenticar BANDEC</string>
+    <string name="mnu_auth_bm">Autenticar BM</string>
+
+    <string name="consumo_kWh">%1$d kWh</string>
+    <string name="importe_cup">%1$s CUP</string>
+
+    <string name="no_result">Sin registros</string>
+    <string name="registry_interval">Lectura: %1$d - %2$d kWh</string>
+    <string name="consumo_interval">Consumo: %1$d kWh</string>
+    <string name="importe_interval">Importe: %1$s CUP</string>
+
+    <string name="version">Versión: %1$s</string>
+    <string name="our_portfolio">OUR PORTFOLIO</string>
+
+    <string-array name="cabecera_tabla">
+        <item>@string/range</item>
+        <item>@string/consumokwh</item>
+        <item>@string/price</item>
+        <item>@string/importe</item>
+    </string-array>
+
+    <string-array name="ranges">
+        <item>0 – 100</item>
+        <item>101 – 150</item>
+        <item>151 – 200</item>
+        <item>201 – 250</item>
+        <item>251 – 300</item>
+        <item>301 – 350</item>
+        <item>351 – 400</item>
+        <item>401 – 450</item>
+        <item>451 – 500</item>
+        <item>501 – 600</item>
+        <item>601 – 700</item>
+        <item>701 – 1000</item>
+        <item>1001 – 1800</item>
+        <item>1801 – 2600</item>
+        <item>2601 – 3400</item>
+        <item>3401 – 4200</item>
+        <item>4201 – 5000</item>
+        <item>Más de 5000</item>
+    </string-array>
+
+    <!-- DIALOG ABOUT -->
+    <string name="sub_about">Si te ha gustado o resultado útil esta aplicación no olvides dejarnos un comentario en Apklis.</string>
+    <string name="develop">Desarrollador</string>
+    <string name="sub_develop">Ing. Jesús Carrasco</string>
+
+    <!-- DIALOG DELETE REG -->
+    <string name="delete_reg">Eliminar registro</string>
+    <string name="delete_qestion">¿Desea eliminar un registro oficial? Esta acción no se puede deshacer.</string>
+    <string name="cancel">Cancelar</string>
+    <string name="delete">Eliminar</string>
+
+    <!-- DIALOG CAN PAY -->
+    <string name="money_allowed">Dinero disponible</string>
+    <string name="our_telegram">Telegram</string>
+    <string name="contador_id">Contador ID</string>
+    <string name="contador_name">Propietario o identificador</string>
+    <string name="contador_add">Añadir</string>
+
+    <string name="permission_accept">Por favor permita acceder a las llamadas para poder continuar.</string>
+
+    <string name="send_comments">\n\n-----------------------------\nPor favor, no elimine esta información\nSistema Operativo: Android %1$s\nVersión de la aplicación: %2$s\nMarca de fábrica: %3$s\nModelo del dispositivo: %4$s\nFabricante: %5$s</string>
+
+</resources>

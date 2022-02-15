@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardRead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/spacing_small"
+        app:cardElevation="@dimen/spacing_small">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_medium">
+
+            <LinearLayout
+                android:id="@+id/layoutLectura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:visibility="visible"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/last_read"
+                    style="@style/EditText_Flat_Grey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="@dimen/spacing_xsmall"
+                    android:layout_marginEnd="@dimen/spacing_xsmall"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_round_bg_primary"
+                    android:hint="@string/last_read"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:maxLines="1"
+                    android:padding="@dimen/spacing_medium"
+                    android:singleLine="true"
+                    android:textColorHint="#616161" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/read"
+                    style="@style/EditText_Flat_Grey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="@dimen/spacing_xsmall"
+                    android:layout_marginEnd="@dimen/spacing_xsmall"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_round_bg_primary"
+                    android:hint="@string/read"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:maxLines="1"
+                    android:padding="@dimen/spacing_medium"
+                    android:singleLine="true"
+                    android:textColorHint="#616161" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutConsumo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/consumo"
+                    style="@style/EditText_Flat_Grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="@dimen/spacing_xsmall"
+                    android:layout_marginEnd="@dimen/spacing_xsmall"
+                    android:background="@drawable/text_round_bg_primary"
+                    android:hint="@string/consumokwh"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:maxLines="1"
+                    android:padding="@dimen/spacing_medium"
+                    android:singleLine="true"
+                    android:textColorHint="#616161" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xsmall"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCalcular"
+                    style="@style/ButtonBorderless"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:text="@string/calcular" />
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/btnFlipMode"
+                    style="@style/ButtonBorderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    app:srcCompat="@drawable/ic_flip" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cardInformation"
+        android:layout_below="@id/cardRead"
+        android:layout_marginStart="@dimen/spacing_small"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:layout_marginEnd="@dimen/spacing_small"
+        android:layout_marginBottom="@dimen/spacing_small"
+        app:cardElevation="@dimen/spacing_small">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardInformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/spacing_small"
+        app:cardElevation="@dimen/spacing_small">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_medium">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="@string/consumo"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/cons_kwh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_small"
+                    android:layout_weight="1"
+                    android:text="@string/_0_kwh"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="@string/total_a_pagar"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/importe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_small"
+                    android:layout_weight="1"
+                    android:text="@string/_0_cup"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

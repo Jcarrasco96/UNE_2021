@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_middle">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/item_contador_id"
+            style="@style/EditText_Flat_Grey"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/text_round_bg_secondary"
+            android:hint="@string/contador_id"
+            android:inputType="number"
+            android:padding="@dimen/spacing_middle"
+            android:textColorHint="#616161" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_middle" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/item_contador_name"
+            style="@style/EditText_Flat_Grey"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/text_round_bg_secondary"
+            android:hint="@string/contador_name"
+            android:inputType="text"
+            android:padding="@dimen/spacing_middle"
+            android:textColorHint="#616161" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/spacing_medium"
+        android:paddingEnd="@dimen/spacing_medium">
+
+        <ProgressBar
+            android:id="@+id/progressDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bt_cancel"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/cancel" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bt_submit"
+            style="@style/Button.Accent.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/contador_add" />
+
+    </LinearLayout>
+
+</LinearLayout>

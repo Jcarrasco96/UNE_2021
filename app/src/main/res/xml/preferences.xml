@@ -1,0 +1,57 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Interfaz">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_night_mode"
+            android:summary="Establecer modo obscuro"
+            android:title="Modo obscuro" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Exportar e importar datos">
+        <Preference
+            android:key="key_export"
+            android:summary="Exportar datos de la aplicación a un archivo"
+            android:title="Exportar datos" />
+        <Preference
+            android:key="key_import"
+            android:summary="Importar datos a la aplicación de un archivo"
+            android:title="Importar datos" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/about">
+        <Preference
+            android:icon="@mipmap/ic_launcher"
+            android:key="key_app_name"
+            android:selectable="false"
+            android:summary="Versión: 1.0"
+            android:title="@string/app_name" />
+        <Preference
+            android:key="key_develop"
+            android:selectable="true"
+            android:summary="@string/sub_develop"
+            android:title="@string/develop" />
+        <Preference
+            android:key="key_update"
+            android:summary="Buscar nueva actuaización"
+            android:title="Buscar nueva actuaización" />
+        <Preference
+            android:key="key_send_feedback"
+            android:summary="¿Tienes alguna inquietud? ¡Estamos encantados de ayudarle!"
+            android:title="Enviar comentarios" />
+        <Preference
+            android:key="key_web"
+            android:selectable="true"
+            android:summary="https://cmsagency.com.es/"
+            android:title="Portafolio" />
+        <Preference
+            android:selectable="false"
+            android:summary="@string/sub_about" />
+        <Preference
+            android:selectable="false"
+            android:summary="Android Studio Bumblebee | 2021.1.1 Patch 1\nBuild on Intel(R) Core(TM) i7-9750H"
+            android:title="Compilación" />
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

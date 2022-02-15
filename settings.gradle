@@ -1,0 +1,50 @@
+pluginManagement {
+    repositories {
+        maven {
+            url 'http://localhost:8081/repository/maven-releases/'
+            allowInsecureProtocol = true
+        }
+        maven {
+            url 'http://nexus.prod.uci.cu/repository/maven-central/'
+            allowInsecureProtocol = true
+        }
+        maven {
+            url 'http://nexus.prod.uci.cu/repository/maven.google.com/'
+            allowInsecureProtocol = true
+        }
+        maven {
+            url 'http://nexus.prod.uci.cu/repository/repo.maven.apache.org/'
+            allowInsecureProtocol = true
+        }
+        maven { url 'https://jitpack.io' }
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        maven {
+            url 'http://localhost:8081/repository/maven-releases/'
+            allowInsecureProtocol = true
+        }
+        maven {
+            url 'http://nexus.prod.uci.cu/repository/maven-central/'
+            allowInsecureProtocol = true
+        }
+        maven {
+            url 'http://nexus.prod.uci.cu/repository/maven.google.com/'
+            allowInsecureProtocol = true
+        }
+        maven {
+            url 'http://nexus.prod.uci.cu/repository/repo.maven.apache.org/'
+            allowInsecureProtocol = true
+        }
+        maven { url 'https://jitpack.io' }
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "UNE 2021"
+include ':app'

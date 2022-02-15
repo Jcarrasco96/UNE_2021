@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mnu_pay"
+        android:icon="@drawable/ic_payment"
+        android:title="@string/mnu_pay"
+        app:showAsAction="ifRoom" />
+
+    <group android:id="@+id/mnug_auth">
+        <item
+            android:id="@+id/mnu_auth_bpa"
+            android:title="@string/mnu_auth_bpa"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/mnu_auth_bandec"
+            android:title="@string/mnu_auth_bandec"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/mnu_auth_bm"
+            android:title="@string/mnu_auth_bm"
+            app:showAsAction="never" />
+    </group>
+</menu>

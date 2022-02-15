@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/mnu_registry"
+        android:icon="@drawable/ic_registry"
+        android:title="@string/mnu_registry"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/mnu_spend"
+        android:icon="@drawable/ic_spend"
+        android:title="@string/mnu_spend"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/mnu_contador"
+        android:icon="@drawable/ic_contador"
+        android:title="@string/mnu_contador"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/mnu_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/mnu_settings"
+        app:showAsAction="ifRoom" />
+</menu>
